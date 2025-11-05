@@ -32,18 +32,18 @@ The `toString()` and `equals()` methods are already implemented for you. You sho
 All methods that mutate the class should return a new instance of the class instead. Remember that you are **NOT** allowed to add new methods. You should **NOT** make the Potion class final.
 
 You can test the correctness of your immutability implementation using `Test1.java`. 
-<br> Note that Test1.java does not check all necessary conditions for immutability.
+<br> Note that `Test1.java` does not check all necessary conditions for immutability.
 
 
 ## Task 2 - 5: Functional Style
 The following tasks assumes correct implementation of Task 1. You have to write the following methods in Functional Style. Additionally, make sure you make all your methods as flexible as possible unless specified otherwise. You may still get parital mark even if your method is not as flexible as possible.<br>
 
 <b>(Easy) Task 2:</b> Rewrite the static method `Task2.countHealingDoses(InfiniteList<Potion> inventory)` that takes in an <i>InfiniteList of Potion</i> and returns the total amount of doses remaining across all <b>unsealed</b> "Healing" Potion.<br>
-You can test the correctness of your FP implementation using `Test2.java`. 
+<i>You can test the correctness of your FP implementation using `Test2.java`. </i> <br>
 <br>
 
 <b>(Easy) Task 3:</b> Rewrite the static method `Task3.getAvgStrength(InfiniteList<Potion> inventory)` that takes in an <i>InfiniteList of Potion</i> and returns the average <b>strength of all potions</b> in the list. <br>
-You can test the correctness of your FP implementation using `Test3.java`. <br>
+<i>You can test the correctness of your FP implementation using `Test3.java`. </i> <br>
 ```jshell
 jshell> import cs2030s.fp.*;
 jshell> /open Potion.java
@@ -71,8 +71,8 @@ $33 ==> 22.5
 jshell> // (10 + 20 + 30 + 30) / 4 = 22.5
 ```
 
-(Medium) Task 4: Rewrite the static method `Task4.getMaxStrength(String name, InfiniteList<Potion> inventory)` that takes in a name of the potion and an InfiniteList of Potion, and returns the maximum strength among all potions whose name matches the given name.<br>
-You can test the correctness of your FP implementation using `Test4.java`. <br>
+<b>(Medium) Task 4:</b> Rewrite the static method `Task4.getMaxStrength(String name, InfiniteList<Potion> inventory)` that takes in a name of the potion and an InfiniteList of Potion, and returns the maximum strength among all potions whose name matches the given name.<br>
+<i>You can test the correctness of your FP implementation using `Test4.java`. </i> <br>
 ```jshell
 jshell> import cs2030s.fp.*;
 jshell> /open Potion.java
@@ -93,14 +93,13 @@ jshell> Task4.getMaxStrength("Healing", ILpotionA)
 $48 ==> 25
 ```
 
-(Medium) Task 5: Rewrite the static method `Task5.splitStrongPotions(InfiniteList<Potion> inventory)` that returns an <i>InfiniteList of Potion</i> where each potion with strength > 1 is split into two new potions with half the strength of the original potion. Potions with strength == 1 are left unchanged.<br>
+<b>(Medium) Task 5:</b> Rewrite the static method `Task5.splitStrongPotions(InfiniteList<Potion> inventory)` that returns an <i>InfiniteList of Potion</i> where each potion with strength > 1 is split into two new potions with half the strength of the original potion. Potions with strength == 1 are left unchanged.<br>
 For example:
 - Healing(6) → Healing(3), Healing(3)
-- Might(51) → Might(25), Might(26)      // Take note: If strength is odd, first potion is `floor()` and second potion is `ceil()`
+- Might(51) → Might(25), Might(26)     <i> // Take note: If strength is odd, first potion is `floor()` and second potion is `ceil()`</i>
 - Invisibility(1) → Invisibility(1) (unchanged)
 <br><br>
-You can test the correctness of your FP implementation using `Test5.java`. <br>
-
+<i>You can test the correctness of your FP implementation using `Test5.java`.</i>
 ```jshell
 jshell> import cs2030s.fp.*;
 jshell> /open Potion.java
