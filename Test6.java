@@ -6,13 +6,6 @@ import java.util.List;
 public class Test6 {
   public static void main(String[] args) {
     CS2030STest we = new CS2030STest();
-
-    /* ===========================================================
-     * Test A: Sum equals target → returns mergeIfTargetd (inv1 ++ inv2)
-     * inv1 = [Healing(10), Might(20)]
-     * inv2 = [Healing(5), Invisibility(7)]
-     * total = 10+20+5+7 = 42 → target 42
-     * =========================================================== */
     Potion[] A1 = new Potion[] {
       new Potion("Healing", 10),
       new Potion("Might", 20)
@@ -47,12 +40,6 @@ public class Test6 {
         true
     );
 
-    /* ===========================================================
-     * Test B: Sum NOT equal to target → returns sentinel()
-     * inv1 = [Healing(3)]
-     * inv2 = [Might(4)]
-     * total = 7 → target 8 → sentinel
-     * =========================================================== */
     Potion[] B1 = new Potion[] { new Potion("Healing", 3) };
     Potion[] B2 = new Potion[] { new Potion("Might", 4) };
 
@@ -72,13 +59,6 @@ public class Test6 {
     );
 
 
-    /* ===========================================================
-     * Test D: Order preservation with mixed names
-     * inv1 = [H(1), M(2), F(3)]
-     * inv2 = [H(4), M(5)]
-     * total = 1+2+3+4+5 = 15 → target 15
-     * Expect mergeIfTargetd order: inv1 then inv2 exactly
-     * =========================================================== */
     Potion[] D1 = new Potion[] {
       new Potion("Healing", 1),
       new Potion("Might", 2),
