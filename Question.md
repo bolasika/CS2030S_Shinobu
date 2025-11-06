@@ -35,7 +35,7 @@ You can test the correctness of your immutability implementation using `Test1.ja
 <br> Note that Test1.java does not check all necessary conditions for immutability.
 
 
-## Task 2 - 5: Functional Style
+## Task 2 - 7: Functional Style
 The following tasks assumes correct implementation of Task 1. You have to write the following methods in Functional Style. Additionally, make sure you make all your methods as flexible as possible unless specified otherwise. You may still get parital mark even if your method is not as flexible as possible.<br>
 
 <b>(Easy) Task 2:</b> Rewrite the static method `Task2.countHealingDoses(InfiniteList<Potion> inventory)` that takes in an <i>InfiniteList of Potion</i> and returns the total amount of doses remaining across all <b>unsealed</b> "Healing" Potion.<br>

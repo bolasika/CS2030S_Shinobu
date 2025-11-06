@@ -31,7 +31,7 @@ public class Test5 {
     List<Potion> outB = Task5.splitStrongPotions(listB).limit(2).toList();
 
     we.expect(
-        "Test B: Odd split 5 -> 3,2; sum preserved",
+        "Test B: Odd split 5 -> 2,3; sum preserved",
         () -> outB.size() == 2
             && outB.get(0).getName().equals("Might")
             && outB.get(1).getName().equals("Might")
