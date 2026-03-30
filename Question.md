@@ -1,10 +1,18 @@
-# Instruction to Candidate
+# Instruction to Students
 1. Solve the programming tasks by editing <i>Potion.java</i> as well as <i>Task2.java to Task5.java</i>. You are not allowed to add additional files
 2. Some tasks require <b>functional-style</b>. There should be only a single statement, usually a return statement. No other statements are allowed including declaration of local variables. You should use lambda expression (no anonymous class) without declaring blocks (including adding new methods). You should not have conditionals / ternary and you should have no loop.
 3. You are NOT allowed to add any import statement. 
 4. You are not allowed to use `toList()` as part of your Functional Programming code solution.
 5. You are not allowed to use Java APIs like `Stream` or `List`. The import of `java.util.*` in some Task files is just to write the skeleton code, and your task is to convert it into Functional Code with the APIs implemented in your Programming Exercises.
 6. You are allowed to use any API from your programming Exercise 5-7, namely `Maybe`, `Lazy` and `InfiniteList`. The details of the APIs are provided in `.API` files
+
+## Running Test Cases
+The test cases for this question are provided in `Test1.java` to `Test7.java`. You can run the test cases using the command below. You can also run the test cases in JShell by following the instructions in the comments of each test file. 
+
+```bash
+javac TestX.java
+java TestX
+```
 
 ## Potion
 <b> Potion </b> 

@@ -1,5 +1,5 @@
 /*
- * Suggested answer from Alex Chien (10B)
+ * Suggested answer from Alex Chien (AY2523S1_Lab 10B)
  */
 import java.util.*;
 import cs2030s.fp.*;
